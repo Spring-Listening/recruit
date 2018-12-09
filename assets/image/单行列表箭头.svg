@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="7px" height="13px" viewBox="0 0 7 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>单行列表箭头</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="新店主注册终稿" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="10礼包支付" transform="translate(-353.000000, -224.000000)" fill="#BBBBBB" fill-rule="nonzero">
+            <path d="M359.853553,224.853553 C360.048816,224.658291 360.048816,224.341709 359.853553,224.146447 C359.658291,223.951184 359.341709,223.951184 359.146447,224.146447 L353.146447,230.146447 C352.951184,230.341709 352.951184,230.658291 353.146447,230.853553 L359.146447,236.853553 C359.341709,237.048816 359.658291,237.048816 359.853553,236.853553 C360.048816,236.658291 360.048816,236.341709 359.853553,236.146447 L354.207107,230.5 L359.853553,224.853553 Z" id="单行列表箭头" transform="translate(356.500000, 230.500000) scale(-1, 1) translate(-356.500000, -230.500000) "></path>
+        </g>
+    </g>
+</svg>

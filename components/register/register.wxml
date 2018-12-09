@@ -1,0 +1,30 @@
+<view id="register" class='register' bindtap='hidePopup' wx:if="{{flag}}" catchtouchmove='preventDefaultEvent'>
+  
+</view>
+<view class="register-wrap {{flag?'slideUp':'slideDown'}}" wx:if="{{flag}}" catchtouchmove='preventDefaultEvent'>
+  <view class="register-content">
+    <view class='titles'>
+      <text class='title'>填写店铺注册信息</text>
+      <image class='close' src='./img/close.svg' bindtap='hidePopup'></image> 
+    </view>
+    <view class="content">
+      <view class='content-list'>
+        <input class='username input' placeholder="输入真实姓名"/>
+      </view>
+      <view class='content-list'>
+        <view class='areacode'>+86 <image class='down' src='./img/down.svg'></image></view>
+        <input class='phone input' placeholder="输入登录手机号"/>
+      </view>
+      <view class='content-list'>
+        <input class='input phoneCode' placeholder="输入验证码"/>
+        <view class='getPhoneCode areacode'>
+          <text class='lineGe'>获取验证码</text>
+        </view>
+      </view>
+      <view class='noneCode'>
+        <view class='noneCodeText'>收不到验证码？</view>
+      </view>
+    </view>
+  </view>
+  <view class='register-submit'>确定</view>
+</view>

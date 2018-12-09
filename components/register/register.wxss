@@ -1,0 +1,115 @@
+
+.register{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  animation: opacty .7s ease;
+}
+@keyframes opacty {
+  from{background: rgba(0, 0, 0, 0);}
+  to{background: rgba(0, 0, 0, 0.5)}
+}
+.register-wrap{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 6;
+  background: #fff;
+}
+.title{
+  float: left;
+}
+.close{
+  float: right;
+  width: 14px;
+  height: 14px;
+  margin-top: 15px;
+}
+.down{
+  width: 6px;
+  height: 6px;
+  margin-bottom: 1px;
+}
+.register-content{
+  padding: 0 20px;
+}
+.titles{
+  font-size: 14px;
+  color: #212121;
+  line-height: 44px;
+  border-bottom: 1rpx solid #ddd;
+  overflow: hidden;
+}
+.content-list{
+  padding-top: 10px;
+  border-bottom: 1rpx solid #ddd;
+  display: flex;
+}
+.username{
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  color: #9a9a9a;
+}
+.areacode{
+  min-width:50px;
+  font-size: 14px;
+  line-height: 40px;
+}
+.phone{
+  flex: 1;
+}
+.input{
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  color: #9a9a9a;
+}
+.phoneCode{
+  flex: 1;
+}
+.getPhoneCode{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 16px;
+}
+.lineGe{
+  width: 94px;
+  text-align: center;
+  display: block;
+  border-left: 1rpx solid #ddd;
+  height: 16px;
+}
+.register-submit{
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  background: #D02C52;
+  font-size: 16px;
+}
+.noneCode{
+  height: 48px;
+}
+.noneCodeText{
+  font-size: 12px;
+  color: #666;
+  line-height: 38px;
+  float: right;
+}
+.slideUp{
+  animation: myAnimation .9s cubic-bezier(0.23, 1, 0.320, 1);
+}
+@keyframes myAnimation {
+  from {bottom:-100%;}
+  to {bottom:0;}
+}

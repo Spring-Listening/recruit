@@ -1,0 +1,70 @@
+<!--index.wxml-->
+<view class="page" style='height:{{height}}px;'>
+  <view class='page_hd'>
+    <view class='page_hd_box'>
+        <view class='page_bd_content'>
+          <view class='header_img'></view>
+          <view class='header_title'>
+            <view class='user_name'>韩美美·买买提</view>
+            <view class='user_desc'>邀请您开启云集之旅，请选择开店礼包</view>
+          </view>
+        </view>
+      </view>
+  </view>
+  <view class='page_bd'>
+    <scroll-view class='scrolly' scroll-y style="height: {{height-79}}px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-top="{{scrollTop}}">
+      <view class='page_bd_box' id="swiper">
+        <view class='swiper'>
+          <scroll-view class="swiper_H {{stickyFlag?'stickey':''}}" scroll-x bindscroll="hrScroll" scroll-into-view="{{toView}}" scroll-left="{{scrollLeft}}">
+            <view class='slider' style="width:{{giftArray.length*100}}px">
+              <block wx:for="{{giftArray}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+                <view class="scroll-view-item {{activeIndex==index?'active':''}}" bindtap='chooseGift' data-index="{{index}}" id="id{{index}}">
+                  <image wx:if="{{activeIndex==index&&!stickeyNone}}" class='icon' src='../../assets/image/choose.svg'></image>
+                  <view class='gift_img {{stickeyNone?"stickeyNone":"stickeyShow"}}'>
+                    <image src='{{item.imgUrl}}'></image>
+                  </view>
+                  <view class='gift_name'>{{item.giftName}}</view>
+                </view>
+              </block>            
+            </view>
+          </scroll-view>
+        </view>
+        <view class='detail_banner'>
+          <view class='flex'>
+            <view class='banner_img'>
+              <image src='http://image.yunjiweidian.com/item_idc/6c78df926ac232863941a26076b31f61.jpg'></image>
+            </view>
+          </view>
+          <view class='price'><text>¥</text><text>398</text></view>
+          <view class='detail_title'>素野花凝玉肌礼包</view>
+          <view class='detail_desc_title'>净透、亮肤、补水、滋养</view>
+          <view class='detail_kucun'>库存17872件</view>
+        </view>
+        <view class='product_detail_img'>
+          <block wx:for="{{productImg}}" wx:for-item="item" wx:for-index="index" wx:key="index">
+            <view class='img-item'>
+              <image mode='widthFix' src='{{item}}'></image>
+            </view>
+          </block>
+        </view>
+      </view>
+    </scroll-view>   
+  </view>
+  <view class='page_ft'></view>
+</view>
+<view class='button'>
+  <view class='button-box'>
+    <view class='btn' bindtap='showPopup'>
+      立即购买
+      <view class='minTitle'>已选择“{{title}}"</view>
+    </view>
+  </view>
+</view>
+<register id='popup' 
+      title='小组件' 
+      content='学会了吗' 
+      btn_no='没有' 
+      btn_ok='学会了'
+      bind:error="_error"  
+      bind:success="_success">
+</register>
